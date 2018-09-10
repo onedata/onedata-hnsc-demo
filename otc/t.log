@@ -1,0 +1,53 @@
+[0m[1mnull_resource.local-setup: Refreshing state... (ID: 2187872504526976149)[0m
+[0m[1mopenstack_blockstorage_volume_v2.op-ceph-image-vol: Refreshing state... (ID: 7a948730-80d8-4116-aafa-7645686264d6)[0m
+[0m[1mopenstack_blockstorage_volume_v2.ceph-node-image-vols[0]: Refreshing state... (ID: c2c729db-48a2-45f4-a501-5080047d750e)[0m
+[0m[1mopenstack_blockstorage_volume_v2.op-posix-image-vol: Refreshing state... (ID: 7454b569-64d0-47aa-a45c-d814164bb4fb)[0m
+[0m[1mopenstack_blockstorage_volume_v2.op-posix-vol: Refreshing state... (ID: 7ab027fe-71d7-4108-93a4-3e828b6c9c88)[0m
+[0m[1mopenstack_compute_secgroup_v2.op: Refreshing state... (ID: 2c4c8d76-af4d-4242-b61a-8ab31e6fa4e5)[0m
+[0m[1mopenstack_compute_secgroup_v2.kube: Refreshing state... (ID: cb35d5d0-843e-40d5-854b-cfb80c7b17e5)[0m
+[0m[1mopenstack_blockstorage_volume_v2.grafana-image-vol: Refreshing state... (ID: ab15fcd9-8778-4103-97bd-a0a65cae6efe)[0m
+[0m[1mopenstack_networking_network_v2.network: Refreshing state... (ID: 158037ef-d3a8-4a65-bb2f-5631746e9c20)[0m
+[0m[1mopenstack_blockstorage_volume_v2.kube-ctlr-image-vols: Refreshing state... (ID: adbd8c62-b2e5-4681-873b-f327b468091a)[0m
+[0m[1mopenstack_compute_keypair_v2.otc: Refreshing state... (ID: odt4-otc)[0m
+[0m[1mopenstack_blockstorage_volume_v2.ceph-node-image-vols[1]: Refreshing state... (ID: 69d85f15-dcbf-4b36-8c4a-07b4a2974caf)[0m
+[0m[1mopenstack_blockstorage_volume_v2.kube-work-image-vols[0]: Refreshing state... (ID: 901484f5-66ca-4a4f-89d2-3a24cf1cb91d)[0m
+[0m[1mopenstack_networking_router_v2.router: Refreshing state... (ID: af50ee30-aca6-460f-8f43-66e235230199)[0m
+[0m[1mopenstack_blockstorage_volume_v2.kube-work-image-vols[1]: Refreshing state... (ID: e405ee19-7bd8-4ee5-9579-6e652d67172c)[0m
+[0m[1mopenstack_networking_subnet_v2.subnet: Refreshing state... (ID: 2a062bf3-b1d6-4577-8106-13d97d88b74d)[0m
+[0m[1mopenstack_networking_port_v2.op-posix-port: Refreshing state... (ID: b7300672-b3b8-466b-8c00-5f1629169b2f)[0m
+[0m[1mopenstack_networking_router_interface_v2.interface: Refreshing state... (ID: 29867dd3-6a57-46fb-a0e7-abd6ee14d430)[0m
+[0m[1mopenstack_compute_secgroup_v2.ceph: Refreshing state... (ID: 4f1958cc-38e3-425b-9d06-eed01073ddd2)[0m
+[0m[1mopenstack_networking_port_v2.op-ceph-port: Refreshing state... (ID: 001102cd-17ee-4dfc-8fa8-e668ec95dd93)[0m
+[0m[1mopenstack_networking_port_v2.nodes-port[0]: Refreshing state... (ID: 10de7f27-c965-45f8-a3f3-f33ea63c5233)[0m
+[0m[1mopenstack_networking_port_v2.nodes-port[1]: Refreshing state... (ID: 4b81cdbb-42be-46a6-b902-c10611996fad)[0m
+[0m[1mopenstack_networking_port_v2.ctlr-port: Refreshing state... (ID: 22714876-b16f-4691-acc5-0cbf7972512d)[0m
+[0m[1mopenstack_networking_port_v2.work-port[0]: Refreshing state... (ID: 1d07ec94-33aa-4826-ab7e-cac54b100f35)[0m
+[0m[1mopenstack_networking_port_v2.work-port[1]: Refreshing state... (ID: 17970ad6-3df5-4805-ba9c-d7c1997e3c6d)[0m
+[0m[1mopenstack_compute_instance_v2.op-ceph: Refreshing state... (ID: d18e92d3-b1ce-44bc-a34a-284a3179d715)[0m
+[0m[1mopenstack_compute_instance_v2.op-posix: Refreshing state... (ID: 5c268b02-be67-4b6e-89e7-66dee06e858c)[0m
+[0m[1mopenstack_compute_instance_v2.kube-ctlr: Refreshing state... (ID: 34b30c06-ffd5-43a0-9eb7-fc10435681b4)[0m
+[0m[1mopenstack_compute_instance_v2.kube-work[0]: Refreshing state... (ID: 52cc3132-e388-4943-97af-fd5318dd2157)[0m
+[0m[1mopenstack_compute_instance_v2.kube-work[1]: Refreshing state... (ID: 74851369-bcd6-48a1-a481-f329099bd27f)[0m
+[0m[1mopenstack_compute_instance_v2.ceph-nodes[1]: Refreshing state... (ID: cb6c56f2-d2bb-4f68-bd54-2c5ee111fbcd)[0m
+[0m[1mopenstack_networking_port_v2.grafana-port: Refreshing state... (ID: 6b7e1fdc-483e-4000-9800-4769484b68ee)[0m
+[0m[1mopenstack_compute_instance_v2.ceph-nodes[0]: Refreshing state... (ID: 277c0c3f-f027-4489-bb18-bd95bfb30005)[0m
+[0m[1mopenstack_compute_instance_v2.grafana: Refreshing state... (ID: c5f8950f-d08b-4ad7-b91e-f30d0de97985)[0m
+[0m[1mopenstack_networking_floatingip_v2.kube-ctlr: Refreshing state... (ID: 7bf51757-dbdc-486e-b493-9e371aa3c532)[0m
+[0m[1mopenstack_networking_floatingip_v2.op-ceph: Refreshing state... (ID: 332933b7-0589-4882-ad1e-72cc9d328626)[0m
+[0m[1mnull_resource.bastion: Refreshing state... (ID: 5959027449422819046)[0m
+[0m[1mnull_resource.prepare-op-ceph: Refreshing state... (ID: 4635696768183841146)[0m
+[0m[1mnull_resource.provision-ctlr: Refreshing state... (ID: 4219928882125686511)[0m
+[0m[1mnull_resource.provision-work[0]: Refreshing state... (ID: 1062979830686494219)[0m
+[0m[1mnull_resource.provision-work[1]: Refreshing state... (ID: 1019294139685846749)[0m
+[0m[1mopenstack_networking_floatingip_v2.ceph-nodes: Refreshing state... (ID: ac700a14-bd5d-44b9-8cda-70288c6eec26)[0m
+[0m[1mnull_resource.ceph-node-connect[0]: Refreshing state... (ID: 7412561636742686626)[0m
+[0m[1mnull_resource.ceph-node-connect[1]: Refreshing state... (ID: 2578620057534113283)[0m
+[0m[1mopenstack_networking_floatingip_v2.grafana: Refreshing state... (ID: 245ce3af-366d-4676-963e-4a32e0dadca3)[0m
+[31m
+[1m[31mError: [0m[0m[1mError refreshing state: 1 error(s) occurred:
+
+* openstack_compute_instance_v2.op-posix: 1 error(s) occurred:
+
+* openstack_compute_instance_v2.op-posix: openstack_compute_instance_v2.op-posix: Error trying to get network information from the Network API: Could not find any matching port for port b7300672-b3b8-466b-8c00-5f1629169b2f[0m
+
+[0m[0m[0m
