@@ -44,7 +44,7 @@ spec:
            do echo "Waiting for oneprovider (i.e. successful mount)";
            sleep 30;
            done;
-           SPACE={{space_name}}/ceph/sysb.$MYN;
+           SPACE={{space_name}}/{{cloud}}/sysb.$MYN;
            mkdir -p /mnt/oneclient/$SPACE;
            echo $SPACE;
            cd /mnt/oneclient/$SPACE;

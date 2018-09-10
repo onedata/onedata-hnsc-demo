@@ -42,10 +42,10 @@ spec:
            do echo "Waiting for oneprovider (i.e. successful mount)";
            sleep 30;
            done;
-           SPACE={{space_name}}/rt;
+           SPACE={{space_name}}/bari/dd-wr;
            echo $SPACE;
            cd /mnt/oneclient/$SPACE;
-           ioping -c 10000 -i 0 -S 2G f.$MYN ; 
+           ioping -c 10000 -i 0 -S 10G f.$MYN ; 
            sleep 360000;
         readinessProbe:
           exec:

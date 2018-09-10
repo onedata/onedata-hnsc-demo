@@ -3,7 +3,7 @@
     - name: Prepare jobs file
       template:
         src: "kube-jobs/{{item}}.j2"
-        dest: "{{ansible_user_dir}}/{{item}}.yaml"
+        dest: "{{ansible_user_dir}}/{{item}}-{{cloud}}.yaml"
       with_items:
         - w-test-sysb-prep-job
         - w-test-sysb-seqwr-job

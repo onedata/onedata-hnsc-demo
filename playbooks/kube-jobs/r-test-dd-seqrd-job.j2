@@ -42,7 +42,7 @@ spec:
            do echo "Waiting for oneprovider (i.e. successful mount)";
            sleep 30;
            done;
-           SPACE={{space_name}}/rt;
+           SPACE={{space_name}}/bari/dd-wr;
            echo $SPACE;
            cd /mnt/oneclient/$SPACE;
            dd if=f.$MYN of=/dev/null bs=4M ;   

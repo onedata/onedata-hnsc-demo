@@ -300,7 +300,7 @@ resource "null_resource" "provision-kube-jobs" {
   provisioner "remote-exec" {
     inline = [
       "ansible-playbook -i \"localhost,\" playbooks/tcp-count.yml",
-      "ansible-playbook -i inventory-kube.ini playbooks/kube-jobs.yml -e \"grafana_ip=${openstack_compute_instance_v2.grafana.access_ip_v4} oneclient_oneprovider_host=${openstack_compute_instance_v2.op-ceph.name}.${var.onezone} oneclient_access_token=${var.access_token} space_name=${var.space_name} oneclient_image=${var.oneclient_image} count_server_ip=${openstack_compute_instance_v2.op-ceph.access_ip_v4}\"",
+      "ansible-playbook -i inventory-kube.ini playbooks/kube-jobs.yml -e \"grafana_ip=${openstack_compute_instance_v2.grafana.access_ip_v4} oneclient_oneprovider_host=${openstack_compute_instance_v2.op-ceph.name}.${var.onezone} oneclient_access_token=${var.access_token} space_name=${var.space_name} oneclient_image=${var.oneclient_image} count_server_ip=${openstack_compute_instance_v2.op-ceph.access_ip_v4} cloud=otc\"",
     ]
   }
 }

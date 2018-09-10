@@ -106,11 +106,19 @@ variable "onezone" {
   default = "onedata.hnsc.otc-service.com"
 }
 
+### Oneclients
+variable "client_count" {
+  default = "1"
+}
+
+variable client_flavor {
+  default = "s2.medium.4"
+}
+
 ### Grafana
 variable "grafana_flavor_name" {
   default = "s2.large.4"
 }
-
 
 ### Ceph
 # The number of monitors of Ceph cluster. 
@@ -120,7 +128,7 @@ variable "ceph-mon_count" {
 
 # The number of VM for running OSDs.
 variable "ceph-node_count" {
-  default = "4"
+  default = "3"
 }
 
 ### VM (Instance) Settings
