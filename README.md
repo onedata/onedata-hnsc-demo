@@ -66,7 +66,7 @@ Testing the performance of data access from many concurrent clients is realized 
 The jobs definitions are in the home directory of the k8s master node. The local tests are done with sysbench while the remotes with dd or ioping. All the jobs have the parallelism set to 50.
 
 ## Prepare sysbench files
-In order to use sysbench the test files need to be prepared. Sysbench files will be placed in your-space/ceph/sysb.*. Each client will have its own directory with test files. To run the preparation job issue:
+In order to use sysbench the test files need to be prepared. Sysbench files will be placed in your-space/otc/sysb.* or your-space/exo/sysb.* depending on the cloud they reside. Each client will have its own directory with test files. To run the preparation job issue:
 ```
 kubectl create -f w-test-sysb-prep-job.yaml
 ```

@@ -244,7 +244,7 @@ variable "otc_availability_zone" {
 }
 
 variable "otc_availability_zone2" {
-  default = "eu-de-01"
+  default = "eu-de-02"
 }
 
 variable "otc_tenant_name" {
