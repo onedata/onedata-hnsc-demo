@@ -140,7 +140,7 @@ resource "null_resource" "op-ceph-oneclient" {
 resource "null_resource" "op-ceph-collectd" { 
   depends_on = ["null_resource.provision-grafana"]
   connection {
-    host = "${exoscale_compute.op-posix.ip_address}"
+    host = "${exoscale_compute.op-ceph.ip_address}"
     user     = "${var.ssh_user_name}"
     agent = true
     timeout = "10m"

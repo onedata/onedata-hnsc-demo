@@ -35,7 +35,7 @@ variable "project" {
 ### Onedata related variables
 
 variable "space_name" {
-  default = "odt-exo"
+  default = "GenOD"
 }
 
 variable "access_token" {
@@ -47,15 +47,15 @@ variable "onedatify_install_script_version" {
 }
 
 variable "onedatify_oneprovider_version" {
-  default = "onedata/oneprovider:18.02.0-rc10"
+  default = "onedata/oneprovider:18.02.0-rc11"
 }
 
 variable "oneclient_image" {
-  default = "onedata/oneclient:18.02.0-rc10"
+  default = "onedata/oneclient:18.02.0-rc11"
 }
 
 variable "oneclient_package" {
-  default = "http://packages.onedata.org/yum/centos/7x/x86_64/oneclient-18.02.0.rc10-1.el7.centos.x86_64.rpm"
+  default = "http://packages.onedata.org/yum/centos/7x/x86_64/oneclient-18.02.0.rc11-1.el7.centos.x86_64.rpm"
 }
 
 ### Oneprovider
@@ -68,12 +68,12 @@ variable "opdomain" {
 }
 
 variable "support_token_ceph" {
-  default = "MDAxNWxvY2F00aW9uIG9uZXpvbmUKMDAzMGlkZW500aWZpZXIgNzMzZDgyZjFmMjA00ZTRiYTQzY2IzNmFkNzI3ZTk3NzcKMDAyOGNpZCB00b2tlblR5cGUgPSBzcGFjZV9zdXBwb3J00X3Rva2VuCjAwMmZzaWduYXR1cmUgtzY5NjVA1veEKXI02THazZbmM5RlDovP8Fm302MKuxXscK"
+  default = "MDAxNWxvY2F00aW9uIG9uZXpvbmUKMDAzMGlkZW500aWZpZXIgNDZhYjFmZTRkYTkwYzZjYTkzYjZjYjU2ZjNiMGM1YTMKMDAyOGNpZCB00b2tlblR5cGUgPSBzcGFjZV9zdXBwb3J00X3Rva2VuCjAwMmZzaWduYXR1cmUgSbqjT02USRu02sXAZ3Lb00Xl6hydAmBLaelYKs49oP01MnQK"
 }
 
-variable "support_token_posix" {
-  default = "MDAxNWxvY2F00aW9uIG9uZXpvbmUKMDAzMGlkZW500aWZpZXIgNGFmOTY2ODA5MDNhMjliODg4NjkxMDQyMzAxZDBmMzkKMDAyOGNpZCB00b2tlblR5cGUgPSBzcGFjZV9zdXBwb3J00X3Rva2VuCjAwMmZzaWduYXR1cmUg301Foj2YtXO01k5DvC01R1cfmrX5jNkExw4yytYfpuFm4QK"
-}
+# variable "support_token_posix" {
+#   default = "MDAxNWxvY2F00aW9uIG9uZXpvbmUKMDAzMGlkZW500aWZpZXIgNGFmOTY2ODA5MDNhMjliODg4NjkxMDQyMzAxZDBmMzkKMDAyOGNpZCB00b2tlblR5cGUgPSBzcGFjZV9zdXBwb3J00X3Rva2VuCjAwMmZzaWduYXR1cmUg301Foj2YtXO01k5DvC01R1cfmrX5jNkExw4yytYfpuFm4QK"
+# }
 
 variable "oppass" {
   default = "pass123."
@@ -87,14 +87,14 @@ variable "support_size_ceph" {
   default = "1099511627776" # 1TB
 }
 
-variable "storage_type_posix" {
-  default = "posix"
-}
+# variable "storage_type_posix" {
+#   default = "posix"
+# }
 
-variable "support_size_posix" {
-  # default = "322122547200" # 300GB
-  default = "1610612736000" #1500GB
-}
+# variable "support_size_posix" {
+#   # default = "322122547200" # 300GB
+#   default = "1610612736000" #1500GB
+# }
 
 variable "onezone" {
   default = "onedata.hnsc.otc-service.com"
@@ -108,13 +108,13 @@ variable "op-flavor" {
   default = "Huge"
 }
 
-variable "op-posix-flavor" {
-  default = "Titan"
-}
+# variable "op-posix-flavor" {
+#   default = "Titan"
+# }
 
-variable "op-posix-disk" {
-  default = "1600"
-}
+# variable "op-posix-disk" {
+#   default = "1600"
+# }
 
 ### Oneclients
 variable "client_count" {
@@ -125,22 +125,19 @@ variable "client_flavor" {
   default = "Extra-large"
 }
 
-### NFS clients
-variable "nfs_client_count" {
-  default = "1"
-}
+# ### NFS clients
+# variable "nfs_client_count" {
+#   default = "1"
+# }
 
-variable "nfs_client_flavor" {
-  default = "Extra-large"
-}
-
-
+# variable "nfs_client_flavor" {
+#   default = "Extra-large"
+# }
 
 ### Ceph cluster settings
 variable "ceph-flavor" {
   default = "Medium"
 }
-
 
 # The number of monitors of Ceph cluster. 
 variable "ceph-mon_count" {
@@ -149,7 +146,7 @@ variable "ceph-mon_count" {
 
 # The number of VM for running OSDs.
 variable "ceph-node_count" {
-  default = "4"
+  default = "3"
 }
 
 # The size of elastic volumes which will be attached to the OSDs. The size is given in GB.

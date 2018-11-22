@@ -4,9 +4,9 @@ output "Ceph nodes addresses" {
 output "Oneprovider with Ceph support" {
   value = "${openstack_networking_floatingip_v2.op-ceph.address}"
 }
-output "Oneprovider with POSIX support" {
-  value = "${openstack_networking_floatingip_v2.op-posix.address}"
-}
+# output "Oneprovider with POSIX support" {
+#   value = "${openstack_networking_floatingip_v2.op-posix.address}"
+# }
 
 
 # output "ceph-node addresses" {

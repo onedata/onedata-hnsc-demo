@@ -24,60 +24,50 @@ variable "access_token" {
   default = ""
 }
 
-# variable "onedata_version" {
-#   default = "18.02.0-rc10"
-# }
-
 variable "onedatify_install_script_version" {
   default = "18.02.0.rc10"
 }
 
 variable "onedatify_oneprovider_version" {
-  default = "onedata/oneprovider:18.02.0-rc10"
+  default = "onedata/oneprovider:18.02.0-rc11"
 }
 
 variable "oneclient_image" {
-  default = "onedata/oneclient:18.02.0-rc10"
+  default = "onedata/oneclient:18.02.0-rc11"
 }
 
 variable "oneclient_package" {
-  default = "http://packages.onedata.org/yum/centos/7x/x86_64/oneclient-18.02.0.rc10-1.el7.centos.x86_64.rpm"
+  default = "http://packages.onedata.org/yum/centos/7x/x86_64/oneclient-18.02.0.rc11-1.el7.centos.x86_64.rpm"
 }
-
-# variable "onedatify_version" {
-#   default = "18.02.0-rc9"
-# }
-# variable "oneclient_image" {
-#   default = "onedata/oneclient:18.02.0-rc9"
-# }
 
 ### Oneprovider
 variable "op_flavor_name" {
   #default = "s2.medium.8"
-  default = "h2.3xlarge.10"
+  default = "s2.xlarge.8"
+  # default = "h2.3xlarge.10"
 }
 
-variable "op-posix_flavor_name" {
-  #default = "s2.medium.8"
-  #default = "h1.2xlarge.8"
-  default = "h2.3xlarge.10"  
-}
+# variable "op-posix_flavor_name" {
+#   #default = "s2.medium.8"
+#   #default = "h1.2xlarge.8"
+#   default = "h2.3xlarge.10"  
+# }
 
-variable "op-posix-vol_size" {
-  default = "3000"
-}
+# variable "op-posix-vol_size" {
+#   default = "3000"
+# }
 
 variable "opdomain" {
   default = "onedata.hnsc.otc-service.com"
 }
 
 variable "support_token_ceph" {
-  default = "MDAxNWxvY2F00aW9uIG9uZXpvbmUKMDAzMGlkZW500aWZpZXIgOTc5ODA2MmNiZGVlYzZiMjNkYjExOGZhZjhkZDgyMWMKMDAyOGNpZCB00b2tlblR5cGUgPSBzcGFjZV9zdXBwb3J00X3Rva2VuCjAwMmZzaWduYXR1cmUge6KdtSpebCsrtLo1H200wzIDftghwSsxy01e1Kpc18ADAK"
+  default = "MDAxNWxvY2F00aW9uIG9uZXpvbmUKMDAzMGlkZW500aWZpZXIgYzU2ZWRlMWYzMGM1YmUzZDQ3MzUwMmE5ZTc3NjBjNzMKMDAyOGNpZCB00b2tlblR5cGUgPSBzcGFjZV9zdXBwb3J00X3Rva2VuCjAwMmZzaWduYXR1cmUgk02GS01ve8CufYbE8XEOi01lJ6vAtxYfl2ZchrepGjdP02YK"
 }
 
-variable "support_token_posix" {
-  default = "MDAxNWxvY2F00aW9uIG9uZXpvbmUKMDAzMGlkZW500aWZpZXIgMDQ2ZWQ5OGU2NjE00ZTk4MTY5ZGE1NmYxOTk00MTIzOTQKMDAyOGNpZCB00b2tlblR5cGUgPSBzcGFjZV9zdXBwb3J00X3Rva2VuCjAwMmZzaWduYXR1cmUgLNG3i00z0101GzDxrdJtuuhBfSGL65rEDv5syAm374vNUcK"
-}
+# variable "support_token_posix" {
+#   default = "MDAxNWxvY2F00aW9uIG9uZXpvbmUKMDAzMGlkZW500aWZpZXIgMDQ2ZWQ5OGU2NjE00ZTk4MTY5ZGE1NmYxOTk00MTIzOTQKMDAyOGNpZCB00b2tlblR5cGUgPSBzcGFjZV9zdXBwb3J00X3Rva2VuCjAwMmZzaWduYXR1cmUgLNG3i00z0101GzDxrdJtuuhBfSGL65rEDv5syAm374vNUcK"
+# }
 
 variable "oppass" {
   default = "pass123."
@@ -88,19 +78,20 @@ variable "storage_type_ceph" {
 }
 
 variable "support_size_ceph" {
-#  default = "1099511627776" # 1TB
-  default = "8796093022208" # 8TB
+  # default = "1099511627776" # 1TB
+  default = "2199023255552" # 2TB
+  # default = "8796093022208" # 8TB
 }
 
-variable "storage_type_posix" {
-  default = "posix"
-}
+# variable "storage_type_posix" {
+#   default = "posix"
+# }
 
-variable "support_size_posix" {
-#  default = "322122547200" # 300GB
-  default = "3298534883328" # 3TB
+# variable "support_size_posix" {
+# #  default = "322122547200" # 300GB
+#   default = "3298534883328" # 3TB
   
-}
+# }
 
 variable "onezone" {
   default = "onedata.hnsc.otc-service.com"
@@ -128,22 +119,22 @@ variable "ceph-mon_count" {
 
 # The number of VM for running OSDs.
 variable "ceph-node_count" {
-  default = "3"
+  default = "2"
 }
 
 ### VM (Instance) Settings
 # The flavor name used for Ceph monitors and OSDs. 
 variable "ceph_node_flavor" {
-  default = "h2.3xlarge.10"
+  # default = "h2.3xlarge.10"
   # default = "hl1.8xlarge.8"
   # default = "h1.xlarge.4"
   # default = "s2.xlarge.8"
-  # default = "s2.medium.8"
+  default = "s2.medium.8"
 }
 
 # The size of elastic volumes which will be attached to the OSDs. The size is given in GB.
 variable "vol_size" {
-  default = "100"
+  default = "1000"
 }
 
 # The size of RAM disk used for OSD. The size is given in GB. 
@@ -161,15 +152,15 @@ variable "vol_type" {
 # The number of disks to attach to each VM for running OSDs. The raw Ceph total capacity
 # will be (osd_count * disks-per-osd_count * vol_size) GB.
 variable "disks-per-osd_count" {
-  default = "0"
+  default = "2"
 }
 
 # The disk device naming (prefix) for the given flavor.
 variable "vol_prefix" {
  # default = "/dev/xvd"
- # default = "/dev/vd"
+ default = "/dev/vd"
  #  default = "/dev/ram"
-  default = "/dev/nvme"
+ # default = "/dev/nvme"
 }
 
 
@@ -191,17 +182,17 @@ variable "kube-ctlr_count" {
 
 # The number of workers of Kube cluster. 
 variable "kube-work_count" {
-  default = "4"
+  default = "2"
 }
 
 variable "ctlr_flavor_name" {
-  default = "h1.xlarge.8"
-  # default = "s2.medium.8" # for initial testing of tf scripts
+  # default = "h1.xlarge.8"
+  default = "s2.medium.8" # for initial testing of tf scripts
 }
 
 variable "work_flavor_name" {
-  # default = "h1.xlarge.8"
-  default = "h2.3xlarge.10"
+  default = "h1.xlarge.8"
+  # default = "h2.3xlarge.10"
 }
 
 ### The following variables can optionally be set. Reasonable defaults are provided.
@@ -243,9 +234,9 @@ variable "otc_availability_zone" {
   default = "eu-de-01"
 }
 
-variable "otc_availability_zone2" {
-  default = "eu-de-02"
-}
+# variable "otc_availability_zone2" {
+#   default = "eu-de-02"
+# }
 
 variable "otc_tenant_name" {
   default = "eu-de"
